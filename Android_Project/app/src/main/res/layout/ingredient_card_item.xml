@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <!--  Card Design for Ingredient  -->
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/category_card_design"
+        android:id="@+id/IngredientRelativeLayout"
+        android:padding="8dp">
+
+        <!--    Ingredient Name     -->
+        <TextView
+            android:layout_width="335dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="CAMELLIA SINENSIS (GREEN TEA) LEAF EXTRACT"
+            android:textColor="#424549"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/IngredientName"/>
+
+        <!--   Rating Text     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/IngredientName"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="46dp"
+            android:text="Rating"
+            android:textColor="#424549"
+            android:textSize="13sp"/>
+
+        <!--    Rating Bar    -->
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="-30dp"
+            android:theme="@style/RatingBar"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4"
+            android:scaleX=".25"
+            android:scaleY=".25"
+            android:id="@+id/IngredientRatingBar" />
+
+        <!--    Collapsing Concern Section    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignStart="@+id/IngredientName"
+            android:id="@+id/CollapsingConcernLayout">
+
+            <!--     Concern Text Heading       -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/IngredientName"
+                android:text="Concern"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <!--      Concern Details      -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/IngredientName"
+                android:layout_marginTop="25dp"
+                android:text="• Persistence and bioaccumulation (high)\n• Non-reproductive organ system toxicity (low)"
+                android:textSize="14sp"
+                android:id="@+id/IngredientConcern"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

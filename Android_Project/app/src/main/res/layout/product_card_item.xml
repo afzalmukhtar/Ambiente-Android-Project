@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--  The Entire Card Area  -->
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/product_card_design"
+        android:id="@+id/ProductCardItem">
+
+        <!--    Product Image    -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/lipstick"
+            android:elevation="6dp"
+            android:id="@+id/ProductImage"
+            android:transitionName="enlargeProductTransition"/>
+
+        <!--   Product Name     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Rejuva Minerals Bronzer Highlighter"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#424549"
+            android:id="@+id/ProductName"/>
+
+        <!--   Rating Text     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="100dp"
+            android:text="Rating"
+            android:textColor="#424549"
+            android:textSize="13sp"/>
+
+        <!--   Rating Bar     -->
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="-60dp"
+            android:isIndicator="true"
+            android:clickable="false"
+            android:numStars="5"
+            android:rating="4"
+            android:scaleX=".25"
+            android:scaleY=".25"
+            android:theme="@style/RatingBar"
+            android:id="@+id/ProductRating"/>
+    </RelativeLayout>
+
+</RelativeLayout>

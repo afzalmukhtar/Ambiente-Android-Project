@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayProductInfo">
+
+    <!--  Full Page Relative Layout  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--    Enlarged Product Image Area    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffbaba">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="-15dp"
+                android:elevation="1dp"
+                android:background="@drawable/product_detail_card_design"
+                android:src="@drawable/lipstick"
+                android:id="@+id/enlargedProductImage"
+                android:transitionName="enlargeProductTransition"/>
+        </RelativeLayout>
+
+        <!--    Product Information    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="15dp"
+            android:elevation="8dp"
+            android:background="@drawable/product_display_card"
+            android:id="@+id/ProductInfoRelativeLayout">
+
+            <!--      Product Name      -->
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:text="Benefit Ooh La Lift Instant UnderEye Brightening Boost"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/DetailsPageProductName"/>
+
+            <!--      Rating Text      -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/DetailsPageProductName"
+                android:layout_marginTop="70dp"
+                android:text="Rating"/>
+
+            <!--      Product Rating Bar      -->
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginLeft="-5dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4"
+                android:scaleX=".25"
+                android:scaleY=".25"
+                android:theme="@style/RatingBar"
+                android:id="@+id/DetailsPageProductRating"/>
+
+            <!--      Small Product Image      -->
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/product_detail_card_design">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/lipstick"
+                    android:id="@+id/smallProductImage" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--    Ingredient List    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="350dp"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:id="@+id/IngredientList"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

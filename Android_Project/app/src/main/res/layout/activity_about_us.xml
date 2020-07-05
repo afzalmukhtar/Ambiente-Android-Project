@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/category_card_design"
+        android:elevation="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:elevation="3dp"
+            android:src="@drawable/hritika1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hritika Rahul Mehta"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"
+                android:id="@+id/HritikaName" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PES220180024"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_alignStart="@id/HritikaName"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sec: A"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_alignStart="@id/HritikaName"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="70dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:background="@drawable/category_card_design"
+        android:elevation="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:elevation="3dp"
+            android:src="@drawable/abi1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abirami S."
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"
+                android:id="@+id/AbiramiName"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PES220180495"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_alignStart="@id/AbiramiName"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sec: D"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_alignStart="@id/AbiramiName"
+                android:layout_marginTop="70dp"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        android:background="@drawable/category_card_design"
+        android:elevation="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:elevation="3dp"
+            android:src="@drawable/afzal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afzal Mukhtar"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"
+                android:id="@+id/AfzalName"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PES220180675"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_alignStart="@id/AfzalName"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sec: A"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_alignStart="@id/AfzalName"
+                android:layout_marginTop="70dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

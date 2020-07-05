@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ambiente</string>
+    <string name="applogo">AppLogo</string>
+    <string name="information_about_designers">Information About Designers</string>
+    <string name="information_about_the_app">Information About the App</string>
+    <string name="hi">"Hi, "</string>
+    <string name="category">Category</string>
+    <string name="welcome_choose_your_category"><b>Welcome! </b>Choose Your Category</string>
+    <string name="text_Area">With increasing rise of newer skin-care product in today’s market it has become difficult to choose which one is good for our skin and the environment too. With the increase in the synthetic chemicals in different products, the harm that it can cause to our skin and the environment also increases. Our App is designed to rate the product according to it’s toxicity and also show each ingredient with its toxicity rating and give details of what harm it can cause in simple terms.</string>
+</resources>

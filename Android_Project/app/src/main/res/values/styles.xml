@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--  My Theme  -->
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <!--  Rating Bar Theme  -->
+    <style
+        name="RatingBar"
+        parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">#000</item>
+        <item name="colorControlActivated">#ffcc66</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+</resources>

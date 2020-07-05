@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="135dp"
+    android:gravity="center_horizontal"
+    android:elevation="6dp"
+    android:background="@drawable/category_card_design"
+    android:id="@+id/CategoryCardItem"
+    android:layout_margin="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:elevation="6dp"
+        android:src="@drawable/bronzer_highlighter"
+        android:id="@+id/CategoryImage"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Bronzer / Highlighter"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:id="@+id/CategoryName"/>
+</RelativeLayout>
